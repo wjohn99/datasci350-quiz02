@@ -1,0 +1,32 @@
+---
+title: "Runtime and Ratings"
+---
+
+This page compares the runtime of each filmwith its IMDb rating. @fig-runtime-rating plots runtime on the x-axis and rating on the y-axis.
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+```
+
+```{python}
+#| echo: true
+#| label: fig-runtime-rating
+#| fig-cap: "Runtime and IMDb rating"
+
+plt.scatter(films["runtime_min"], films["imdb_rating"])
+plt.xlabel("Runtime (minutes)")
+plt.ylabel("IMDb rating")
+plt.show()
+```
+
+This shows the mean IMDb rating by decade.
+
+```{python}
+#| echo: true
+
+films["decade"] = films["year"] // 10 * 10
+films.groupby("decade")["imdb_rating"].mean().round(2)
+```

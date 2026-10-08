@@ -1,0 +1,23 @@
+---
+title: "Budget and Revenue"
+---
+
+This page compares the production budget for films with its worldwide revenue. @fig-budget-revenue plots budget on the x-axis and revenue on the y-axis.
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+```
+
+```{python}
+#| echo: true
+#| label: fig-budget-revenue
+#| fig-cap: "Budget and Global Revenue"
+
+plt.scatter(films["budget_musd"], films["revenue_musd"])
+plt.xlabel("Budget (millions)")
+plt.ylabel("Global revenue (millions)")
+plt.show()
+```

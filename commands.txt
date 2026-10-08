@@ -1,0 +1,42 @@
+1.
+quarto create project website .
+
+2.
+git add .gitignore 
+git commit -m "Add gitignore"
+
+3.
+website:
+  title: "Box Office Numbers"
+
+4.
+rm about.qmd
+
+5.
+execute:
+  freeze: auto
+
+format:
+  html:
+    theme: solar
+    css: styles.css
+    toc: true
+
+6.
+Edited index.qmd file to include the description of the dataset.
+
+7.
+touch budget-revenue.qmd
+Wrote code in budget-revenue.qmd
+
+8.
+touch runtime-rating.qmd
+Wrote code in runtime-rating.qmd
+
+9.
+touch bond.qmd
+Wrote code in bond.qmd
+
+10.
+quarto render
+ls _freeze

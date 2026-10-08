@@ -1,0 +1,22 @@
+---
+title: "Bond Films"
+---
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+bond = films[films["franchise"] == "James Bond"]
+```
+
+The Bond films in this dataset go from `{python} int(bond["year"].min())` to `{python} int(bond["year"].max())`.
+
+```{python}
+#| echo: true
+
+plt.plot(bond["year"], bond["revenue_musd"])
+plt.xlabel("Year")
+plt.ylabel("Global revenue (millions)")
+plt.show()
+```

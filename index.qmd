@@ -1,0 +1,17 @@
+---
+title: "Box Office Numbers"
+---
+
+This site looks at 104 popular films released from 1980 to 2025. Each row in `films.csv` records the title, year, franchise, budget, worldwide revenue, runtime, and IMDb rating.
+
+Analysis pages:
+
+- [Budget and Revenue](budget-revenue.qmd)
+- [Runtime and Ratings](runtime-rating.qmd)
+- [The Bond Films](bond.qmd)
+
+I used a AI assistant (ChatGPT) to help me debug my GitHub push issue (permission denied). I referenced the lecture slides and the Quarto website documentation for assistance.
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
