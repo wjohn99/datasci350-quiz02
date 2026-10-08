@@ -40,3 +40,14 @@ Wrote code in bond.qmd
 10.
 quarto render
 ls _freeze
+git add .
+git commit -m "Add site pages and freeze"
+
+11.
+quarto publish gh-pages
+https://wjohn99.github.io/datasci350-quiz02/
+
+12.
+Fixed "The Bond Films" title from "Bond Films" and committed again
+git add .
+git commit -m "Fix Bond Films title"
