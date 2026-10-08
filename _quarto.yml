@@ -15,7 +15,7 @@ website:
       - href: runtime-rating.qmd
         text: Runtime and Ratings
       - href: bond.qmd
-        text: Bond Films
+        text: The Bond Films
 
 format:
   html:

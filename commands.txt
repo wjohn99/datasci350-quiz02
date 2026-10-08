@@ -48,6 +48,16 @@ quarto publish gh-pages
 https://wjohn99.github.io/datasci350-quiz02/
 
 12.
-Fixed "The Bond Films" title from "Bond Films" and committed again
+Fixed "The Bond Films" title from "Bond Films", rendered quarto and updated GitHub page again
+quarto render
+quarto publish gh-pages
 git add .
 git commit -m "Fix Bond Films title"
+
+13.
+git add .
+git commit -m "Add command log"
+git push
+
+14.
+git push

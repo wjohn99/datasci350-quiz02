@@ -1,10 +1,10 @@
 {
-  "hash": "2584dae4653e5ce2416befd77c81d228",
+  "hash": "ac7c54ca0841c15f8aafc62e48b4c848",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\ntitle: \"Bond Films\"\n---\n\n::: {#9d502d1d .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\nbond = films[films[\"franchise\"] == \"James Bond\"]\n```\n:::\n\n\nThe Bond films in this dataset go from 1995 to 2021.\n\n::: {#0e760752 .cell execution_count=2}\n``` {.python .cell-code}\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Global revenue (millions)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](bond_files/figure-html/cell-3-output-1.png){width=601 height=429}\n:::\n:::\n\n\n",
+    "markdown": "---\ntitle: \"The Bond Films\"\n---\n\n::: {#4a8a17a1 .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\nbond = films[films[\"franchise\"] == \"James Bond\"]\n```\n:::\n\n\nThe Bond films in this dataset go from 1995 to 2021.\n\n::: {#dfa40864 .cell execution_count=2}\n``` {.python .cell-code}\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Global revenue (millions)\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](bond_files/figure-html/cell-3-output-1.png){width=601 height=429}\n:::\n:::\n\n\n",
     "supporting": [
-      "bond_files"
+      "bond_files/figure-html"
     ],
     "filters": [],
     "includes": {}

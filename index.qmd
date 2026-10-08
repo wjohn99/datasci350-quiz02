@@ -10,8 +10,4 @@ Analysis pages:
 - [Runtime and Ratings](runtime-rating.qmd)
 - [The Bond Films](bond.qmd)
 
-I used a AI assistant (ChatGPT) to help me debug my GitHub push issue (permission denied). I referenced the lecture slides and the Quarto website documentation for assistance.
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I used a AI assistant (ChatGPT) to help me debug my GitHub push issue (permission denied). I also referenced the lecture slides and the Quarto website documentation for assistance.

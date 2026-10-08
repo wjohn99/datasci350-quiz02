@@ -2,7 +2,7 @@
 title: "Runtime and Ratings"
 ---
 
-This page compares the runtime of each filmwith its IMDb rating. @fig-runtime-rating plots runtime on the x-axis and rating on the y-axis.
+This page compares the runtime of each film with its IMDb rating. @fig-runtime-rating plots runtime on the x-axis and rating on the y-axis.
 
 ```{python}
 import pandas as pd
