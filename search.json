@@ -23,7 +23,7 @@
   {
     "objectID": "bond.html",
     "href": "bond.html",
-    "title": "Bond Films",
+    "title": "The Bond Films",
     "section": "",
     "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\nbond = films[films[\"franchise\"] == \"James Bond\"]\n\nThe Bond films in this dataset go from 1995 to 2021.\n\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Global revenue (millions)\")\nplt.show()"
   }
